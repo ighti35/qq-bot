@@ -1,6 +1,8 @@
 # QQ AI 自动回复机器人
 
-用 **NapCatQQ + OneBot v11** 接入 QQ，用 **DeepSeek** 大模型智能回复，支持 **Bing 联网搜索**、**长期记忆学习**、**最新/最重要消息优先**、**主动找话题**。
+基于 **NapCatQQ + OneBot v11 + DeepSeek** 的可自托管 QQ 智能助手：智能回复、Bing 联网搜索、长期记忆、最新/最重要消息优先、闲时主动找话题。
+
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ```
 ┌──────────┐  反向 WebSocket    ┌───────────────┐   HTTP API    ┌──────────┐
