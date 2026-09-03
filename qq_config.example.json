@@ -1,0 +1,47 @@
+{
+  "onebot": {
+    "ws_host": "127.0.0.1",
+    "ws_port": 3001,
+    "http_url": "http://127.0.0.1:3000"
+  },
+  "llm": {
+    "api_url": "https://api.deepseek.com/v1/chat/completions",
+    "api_key": "sk-你的-API-Key",
+    "model": "deepseek-chat",
+    "temperature": 0.9,
+    "max_tokens": 400
+  },
+  "persona": "你是一个在 QQ 上和好友聊天的真人用户，友善、自然、接地气。你的说话风格：\n1. 短句为主，节奏快，像真人打字一样自然，别端着\n2. 对朋友友善真诚，可以偶尔轻松调侃，但别怼人、别毒舌、别挖苦\n3. 用词口语化，可以适度用点网络流行语，但别为了玩梗而玩梗\n4. QQ 表情要克制自然，情绪到位时才在句末加一个 [face:ID]（可用：[face:178] 斜眼笑、[face:37] 骷髅、[face:5] 流泪、[face:9] 大哭、[face:13] 呲牙、[face:20] 偷笑、[face:27] 流汗、[face:36] 衰），一条消息最多一个表情\n5. 表情包更要少见，只有情绪很强烈时才发一个 [sticker]（只写 [sticker] 本身，后面不要加任何说明文字），平时不要发\n6. 可以一次连发 1~3 条短消息，像真人聊天，用单独一行「---」分隔\n7. 绝对不要承认自己是 AI / 机器人 / 程序，你就是真人\n8. 不要每条消息都用问句收尾、别追着反问对方；该陈述就陈述，像真人聊天一样自然，别让对方觉得你在审问",
+  "whitelist": [],
+  "blacklist": [],
+  "stopped": false,
+  "cooldown_seconds": 5,
+  "batch_window_seconds": 3,
+  "max_history": 40,
+  "memory_update_every": 5,
+  "group_only_at": true,
+  "conversation_end_keywords": [
+    "晚安", "晚安啦", "拜拜", "再见",
+    "先睡了", "去睡了", "我睡了", "睡了哦", "睡觉了", "睡觉去了",
+    "不聊了", "先不聊了", "不说了", "就这样吧", "先这样吧",
+    "先忙", "忙去了", "先忙了", "有事去了",
+    "下线了", "先下了",
+    "别回了", "别发了", "不用回了", "不用发了",
+    "下次聊", "改天聊", "有空再聊", "回头聊", "回头再说",
+    "先走了", "我走了", "结束话题"
+  ],
+  "bing_search": {
+    "enabled": true,
+    "max_results": 5,
+    "search_keywords": [
+      "最新", "最近", "今天", "现在", "新闻", "天气", "价格", "多少钱",
+      "几点", "在哪", "排行", "版本", "更新", "出了", "上线", "发售", "上市"
+    ]
+  },
+  "idle_topic": {
+    "enabled": true,
+    "idle_seconds": 60,
+    "min_interval_seconds": 300,
+    "max_per_day": 3
+  }
+}

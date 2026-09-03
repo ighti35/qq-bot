@@ -1,0 +1,15 @@
+# 依赖缓存
+__pycache__/
+*.pyc
+
+# 个人配置：复制 qq_config.example.json 为 qq_config.json，别提交真实 key
+qq_config.json
+*.json.bak
+
+# 运行时数据：对话记忆 / 日志 / 表情包都由程序或用户自行生成
+memory/
+logs/
+emojis/
+*.log
+
+.DS_Store
